@@ -1,0 +1,43 @@
+/*Общие стили*/
+.section-title {
+    font-weight: 600;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0px 40px;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: var(--akcent);
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 14px 35px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #086eb6;
+}
+
+.btn--transparent {
+    background-color: transparent;
+    border: 1px solid var(--akcent);
+    color: #000;
+
+}
+
+.btn--transparent:hover {
+    color: #fff;
+}

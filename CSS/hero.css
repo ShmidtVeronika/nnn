@@ -1,0 +1,105 @@
+.hero {
+    background-color: var(--temnyy);
+    border-bottom: 50px solid var(--akcent);
+    background-image: url(../img/hero/decor.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 133px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__content {
+    flex: 1;
+    padding-top: clamp(46px, 7.8vw, 92px);
+    padding-bottom: clamp(100px, 16.9vw, 199px);
+}
+
+.address {
+    text-transform: uppercase;
+    color: var(--akcent);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.address::before {
+    content: "";
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url(../img/icons/clarity_map-marker-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.title {
+    font-size: clamp(31px, 4.7vw, 56px);
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 47px;
+}
+
+.hero__btns {}
+
+.btn {}
+
+.hero__btn {}
+
+.hero__img-wrap {
+    flex: 0 1 clamp(240px, 49vw, 580px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 5px 0px 0px 0px;
+    position: relative;
+}
+
+/* блок с облаками */
+.hero__img-wrap::before {
+    content: "";
+    display: block;
+    background-image: url(../img/hero/sky.jpg);
+    height: 100%;
+    width: 100dvw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* фон за облаками */
+.hero__img-wrap::after {
+    content: "";
+    display: block;
+    background-color: #404F59;
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    height: 100%;
+    width: 100vw;
+    border-radius: inherit;
+
+}
+
+.hero__img {
+    max-height: 95%;
+    position: relative;
+    z-index: 15;
+    height: auto;
+    flex: 0 0 auto;
+}
